@@ -31,7 +31,6 @@ public class ProgramaEmpleados {
         curr1.setSueldo(100.20);
         System.out.println(curr1.getSueldo());
 
-
         Jefe jefe1 = new Jefe();
         jefe1.setNombre("Master");
         jefe1.setDni("M456543");
