@@ -2,7 +2,7 @@ package com.unisys.myapps;
 
 public class Empleado extends Persona{
     private long telefono;
-    private double sueldo;
+    protected double sueldo;
     private String cargo;
 
     // Constructor sin parametros
@@ -48,11 +48,11 @@ public class Empleado extends Persona{
     @Override
     public String toString() {
         return "Empleado{" +
-                "dni='" + getDni() + '\'' +
+                "nombre='" + getNombre() + '\'' +
+                ", dni='" + getDni() + '\'' +
                 ", tlf='" + telefono + '\'' +
                 ", sueldo=" + sueldo +
                 ", cargo='" + cargo + '\'' +
-                ", nombre='" + getNombre() + '\'' +
                 '}';
     }
 }
