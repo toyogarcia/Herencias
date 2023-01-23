@@ -1,4 +1,8 @@
-package com.unisys.myapps;
+package main;
+
+import com.unisys.myapps.Currito;
+import com.unisys.myapps.Empleado;
+import com.unisys.myapps.Jefe;
 
 public class ProgramaEmpleados {
     public static void main(String[] args) {
