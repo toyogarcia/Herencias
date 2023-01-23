@@ -1,44 +1,27 @@
 package com.unisys.myapps;
-public class Empleado {
-    private String nombre;
-    private String dni;
+
+public class Empleado extends Persona{
     private long telefono;
     private double sueldo;
     private String cargo;
 
     // Constructor sin parametros
     public Empleado() {
-        this.nombre = "";
-        this.dni = "";
+        super();
         this.telefono = 0;
-        this.sueldo = 0;
+        this.sueldo = 0.0;
         this.cargo = "";
     }
+
+    // Constructor con parametros
     public Empleado(String nombre, String dni, long telefono, double sueldo, String cargo) {
-        this.nombre = nombre;
-        this.dni = dni;
+        super(nombre, dni);
         this.telefono = telefono;
         this.sueldo = sueldo;
         this.cargo = cargo;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getDni() {
-        return dni;
-    }
-
-    public void setDni(String dni) {
-        this.dni = dni;
-    }
-
-    public long getTelefono() {
+   public long getTelefono() {
         return telefono;
     }
 
@@ -60,5 +43,16 @@ public class Empleado {
 
     public void setCargo(String cargo) {
         this.cargo = cargo;
+    }
+
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "dni='" + getDni() + '\'' +
+                ", tlf='" + telefono + '\'' +
+                ", sueldo=" + sueldo +
+                ", cargo='" + cargo + '\'' +
+                ", nombre='" + getNombre() + '\'' +
+                '}';
     }
 }
