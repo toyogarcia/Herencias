@@ -6,6 +6,9 @@ public class CasasApp {
         Casa casa = new Casa();
         System.out.println(casa);
 
+        //Casa casa1 = new Casa("Maria de Molina 36",34.7);
+        //System.out.println(casa1);
+
         //piso
         Piso piso = new Piso();
         System.out.println(piso);
